@@ -1,0 +1,26 @@
+import random
+p=0
+while True:
+    input("roll your device")
+    a=random.randint(1,5)
+    print(f"you rolled dice",a)
+    p=p+a
+    
+    if p==14:
+        print("opps you landed on 14.Moving back to 3")
+        p=3
+        
+    elif p==17:
+        print("opps you landed on 17.Moving back to 9")
+        p=9
+        
+
+    elif p==24:
+        print("oops you landed on 24.Moving back to 1")
+        p==1
+
+    print("your current position is",p,'\n')
+
+    if p>24:
+     print("you won")
+     exit()
