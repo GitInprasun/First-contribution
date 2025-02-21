@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    
+     .circle{
+        border-radius:50%;
+        width:50px;
+        height:50px;
+        background-color:rgb(244, 39, 39);
+        display:inline-block;
+        text-align:left;
+        margin:10px;
+}
+     .dice{
+        border-color:black;
+        background-color:pink;
+        border-radius:5px;
+        align-items:center;
+        width:230px;
+        height:230px;
+     }
+    </style>
+    <script type="text/javascript">
+        function roll()
+        {
+            // var num=Math.floor(Math.random()*6)+1;
+            var num=Math.round((Math.random()*(6-1))+1);
+            var num2=parseInt(document.getElementById("number2").value)
+            var circle = document.getElementsByClassName("circle");
+            for(var i=0;i<9;i++)
+        {
+            circle[i].style.visibility="hidden";
+        }
+        switch(num)
+        {
+            case 1:
+                document.getElementById("5").style.visibility="visible";
+          break;
+
+        case 2:
+                document.getElementById("1").style.visibility="visible";
+                document.getElementById("9").style.visibility="visible";
+                break;
+        case  3:
+                document.getElementById("1").style.visibility="visible";
+                document.getElementById("5").style.visibility="visible";
+                document.getElementById("9").style.visibility="visible";
+                break;
+           case 4:
+                document.getElementById("1").style.visibility="visible";
+                document.getElementById("3").style.visibility="visible";
+                document.getElementById("7").style.visibility="visible";
+                document.getElementById("9").style.visibility="visible";
+                break;
+
+                case 5:
+                document.getElementById("1").style.visibility="visible";
+                document.getElementById("3").style.visibility="visible";
+             document.getElementById("5").style.visibility="visible";
+                document.getElementById("7").style.visibility="visible";
+                document.getElementById("9").style.visibility="visible";
+              break;
+              case 6:
+              document.getElementById("1").style.visibility="visible";
+              document.getElementById("3").style.visibility="visible";
+              document.getElementById("4").style.visibility="visible";
+              document.getElementById("6").style.visibility="visible";
+              document.getElementById("7").style.visibility="visible";
+              document.getElementById("9").style.visibility="visible";
+             break;
+         
+             default:
+                alert("wrong number please select between 1 to 6")
+
+        }
+       
+
+        if(num==num2)
+        {
+            alert("congrulation you have won");
+        }
+        else{
+            alert("YOU LOSE tRY AGAIN!");
+        }
+        
+    }
+    </script>
+</head>
+<body>
+    <div>
+        
+                <input type="number" name="" id="number2" min="1" max="6"><br>
+
+                <input type="button" value="roll the dice" onclick="roll()"/><br><br>
+            <div class="dice">
+        
+        <div id="1" class="circle"></div>
+        <div id="2" class="circle"></div>
+        <div id="3" class="circle"></div>
+        <div id="4" class="circle"></div>
+        <div id="5" class="circle"></div>
+        <div id="6" class="circle"></div>
+        <div id="7" class="circle "></div>
+        <div id="8" class="circle"></div>
+        <div id="9" class="circle"></div>
+ </div>
+       </div>
+</body>
+</html>
