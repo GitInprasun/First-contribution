@@ -1,0 +1,12 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: grey;
+    border:2px solid grey ;
+    justify-content:center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+   padding:25px 15px 15px 15px;
+    
+}

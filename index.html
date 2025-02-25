@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Div Example</title>
+    <style>
+        /* Container styling */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aliceblue;
+        }
+
+        /* Column styling */
+        .column {
+            width: 200px;
+            /* Each column takes up 50% of the container's width */
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <div class="column">Room</div>
+        <div class="column">Toilet</div>
+    </div>
+    <div>
+        <div class="column">Stairs</div>
+        <div class="column">Kitchen</div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.one,.two,.three,.four,.five{
+    height:100px;
+    width:100px;
+    border: 2px solid black;
+
+}
+.one{
+background-color:pink;
+position:relative; /*top botom left use garepaxi element aafno place bata move hunca tara yesko original
+place reserrve nai basxa aru element lai tyo thau reserve lageko hunxa  */
+}
+
+.two{
+ top:0px;
+position:sticky;
+background-color: blue;
+
+ 
+}
+.container{
+ position:relative;
+    height:300px;
+    width:300px;
+    border:2px solid black;
+    margin-bottom: 15px;
+}
+.three{
+    background-color: brown;
+    position:absolute;/*this element required to be inside another element having  position relative
+    otherwise  yesle documnet lai nai aafno ancestral manera react garxa when TBL use garxa*/
+    top:180px;
+}

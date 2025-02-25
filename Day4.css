@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div{
     width:100px;
     height:100px;
@@ -8,4 +9,16 @@ div{
 #box1{
     background-image:url("cat_photo.jpg");
     background-size:cover;
+=======
+div{
+    width:100px;
+    height:100px;
+    border:2px black solid;
+    display:inline-block;
+}
+
+#box1{
+    background-image:url("cat_photo.jpg");
+    background-size:cover;
+>>>>>>> e2ce60d (initial commit)
 }

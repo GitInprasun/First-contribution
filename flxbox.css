@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+     align-items: center; /*Center items vertically */
+    padding: 0 20px; /* Add some padding to the sides */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+    padding: 0 15px; /* Add some padding for spacing */
+}
+
+#logo {
+    height: 25px;
+    margin-right: 10px; /* Add margin to separate from button */
+}
+
+button {
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 0, 0.582);
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        height: auto; /* Adjust height to fit content */
+        padding: 10px; /* Add some padding */
+    }
+
+    a, #logo, button {
+        margin-bottom: 10px; /* Add margin between elements */
+    }
+
+   
+}

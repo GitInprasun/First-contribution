@@ -1,0 +1,22 @@
+#loader{
+    display:flex;
+    justify-self: center;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    border:20px solid hsl(60, 62%, 49%);
+    border-top:20px solid rgb(192, 210, 255);
+    animation: spinAnimate 1s ease-in-out 0s infinite normal;
+}
+
+@keyframes spinAnimate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+    
+}
+

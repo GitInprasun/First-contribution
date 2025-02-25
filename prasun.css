@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin:20px;
+}
+#flexbox{
+    display:flex;
+    height:150px;
+    width:800px;
+    border:2px solid black;
+    margin:50px;
+    justify-content: center;
+         
+}

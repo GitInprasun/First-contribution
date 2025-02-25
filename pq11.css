@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of navbar items */
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    align-items: center; /* Center items vertically */
+    padding: 0 10px; /* Add some padding for better spacing */
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    margin-right: 20px;
+    padding: 14px 20px; /* Add padding for better click area */
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 14px 20px; /* Add padding for better click area */
+    cursor: pointer; /* Change cursor to pointer for buttons */
+}
+
+button:hover {
+    background-color: blueviolet;
+    
+}
+
+input[type="text"] {
+    padding: 10px; /* Add padding for better input area */
+    margin-left: auto; /* Push input to the right */
+    margin-right: 10px; /* Add margin to separate from button */
+    border: none;
+    border-radius: 4px; /* Add rounded corners */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+        height: auto; /* Allow height to adjust */
+    }
+
+    a, button, input[type="text"] {
+        margin: 5px 0; /* Adjust margin for spacing */
+        width: 100%; /* Make them full width */
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%; /* Make dropdown content full width */
+    }
+}

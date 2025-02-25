@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+div{
+    height:100px;
+    width:100px;
+    background-color: aquamarine;
+    border:2px solid black;
+    margin:50px;
+      
+/* transform:translate(30px,50px);  */
+/* transform: rotate(60deg); */
+/* transform:rotate(-50deg); */
+/* transform: scale(1,2); */
+/* transform:skew(50deg,20deg); */
+/* transform: matrix(1,-0.3,0,1,0,0); */
+
+}
